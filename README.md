@@ -1,5 +1,7 @@
 ## Wikitop
 
+NOTICE: THIS DOES NOTHING YET
+
 Wikitop is a Parsing Expression Grammar (PEG)-based parser for a wiki syntax,
 interpreted by the ruby PEG engine Treetop.
 
