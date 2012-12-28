@@ -1,0 +1,24 @@
+PATH
+  remote: .
+  specs:
+    wikitop (0.0.1)
+      treetop
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    minitest (4.3.3)
+    minitest-display (0.2.0.pre2)
+      minitest (~> 4.3)
+    polyglot (0.3.3)
+    treetop (1.4.12)
+      polyglot
+      polyglot (>= 0.3.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  minitest
+  minitest-display (= 0.2.0.pre2)
+  wikitop!
