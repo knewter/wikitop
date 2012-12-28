@@ -8,7 +8,7 @@ describe Wikitop do
   end
 
   it "outputs useful text with link, spanning multiple lines properly" do
-    output = Parser.new.parse("This is a [[link]] to another \nwiki page").to_html
-    output.must_equal "This is a <a href='/link'>link</a> to another \nwiki page"
+    output = Parser.new.parse("This is a [[link-bait]] to another \nwiki page.  Excited?").to_html
+    output.must_equal "This is a <a href='/link-bait'>link-bait</a> to another \nwiki page.  Excited?"
   end
 end

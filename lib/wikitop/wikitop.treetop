@@ -22,7 +22,7 @@ grammar Wikitop
   end
 
   rule char
-    [a-zA-Z0-9 \n\t*!@#$%^&()_{}\|/?.>,<`~]
+    [a-zA-Z0-9 \-\n\t*!@#$%^&()_{}\|/?.>,<`~]
   end
 
   rule left_bracket
