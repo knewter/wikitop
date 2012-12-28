@@ -22,14 +22,6 @@ grammar Wikitop
   end
 
   rule string
-    [a-zA-Z0-9\-_ ]+ <String>
-  end
-
-  rule optional_whitespace
-    [ \t]*
-  end
-
-  rule whitespace
-    [ \t]+
+    [a-zA-Z0-9\-_ \n]+ <String>
   end
 end
