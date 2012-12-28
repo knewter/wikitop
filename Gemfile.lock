@@ -7,10 +7,17 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
+    coderay (1.0.8)
+    method_source (0.8.1)
     minitest (4.3.3)
     minitest-display (0.2.0.pre2)
       minitest (~> 4.3)
     polyglot (0.3.3)
+    pry (0.9.10)
+      coderay (~> 1.0.5)
+      method_source (~> 0.8)
+      slop (~> 3.3.1)
+    slop (3.3.3)
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
@@ -21,4 +28,5 @@ PLATFORMS
 DEPENDENCIES
   minitest
   minitest-display (= 0.2.0.pre2)
+  pry
   wikitop!

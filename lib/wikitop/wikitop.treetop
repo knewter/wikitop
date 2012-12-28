@@ -1,0 +1,9 @@
+grammar Wikitop
+  rule wiki_link
+    '[[' string ']]' <WikiLink>
+  end
+
+  rule string
+    [a-zA-Z0-9\-_]* <String>
+  end
+end
