@@ -8,20 +8,32 @@ grammar Wikitop
   end
 
   rule word_or_link
-    word
-    /
     wiki_link
+    /
+    word
   end
 
   rule wiki_link
-    '[[' word ']]' <WikiLink>
+    wiki_link_start word wiki_link_end <WikiLink>
   end
 
   rule word
-    string
+    char+ <String>
   end
 
-  rule string
-    [a-zA-Z0-9\-_ \n]+ <String>
+  rule char
+    [a-zA-Z0-9 \n\t*!@#$%^&()_{}\|/?.>,<`~]
+  end
+
+  rule left_bracket
+    '['
+  end
+
+  rule wiki_link_start
+    '[['
+  end
+
+  rule wiki_link_end
+    ']]'
   end
 end
