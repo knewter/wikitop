@@ -1,9 +1,35 @@
 grammar Wikitop
+  rule document
+    phrase
+  end
+
+  rule phrase
+    word_or_link* <Phrase>
+  end
+
+  rule word_or_link
+    word
+    /
+    wiki_link
+  end
+
   rule wiki_link
-    '[[' string ']]' <WikiLink>
+    '[[' word ']]' <WikiLink>
+  end
+
+  rule word
+    string
   end
 
   rule string
-    [a-zA-Z0-9\-_]* <String>
+    [a-zA-Z0-9\-_ ]+ <String>
+  end
+
+  rule optional_whitespace
+    [ \t]*
+  end
+
+  rule whitespace
+    [ \t]+
   end
 end

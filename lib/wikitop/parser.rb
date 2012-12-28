@@ -24,4 +24,6 @@ module Wikitop
       root_node.elements.each {|node| self.clean_tree(node) }
     end
   end
+
+  class ParseError < StandardError; end
 end

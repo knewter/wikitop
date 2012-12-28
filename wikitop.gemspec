@@ -10,6 +10,6 @@ Gem::Specification.new do |gem|
   gem.version = Wikitop::VERSION
   gem.add_dependency 'treetop'
   gem.add_development_dependency 'minitest'
-  gem.add_development_dependency 'minitest-display', '0.2.0.pre2'
+  gem.add_development_dependency 'turn'
   gem.add_development_dependency 'pry'
 end
